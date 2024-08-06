@@ -15,7 +15,7 @@ def player_turn(player_num, secret):
             return attempts
         else:
             correct_position, correct_number = generate_hint(secret, guess)
-            print(f"Hint: {correct_position} digits in the correct position and {correct_number} correct digits in the wrong position.")
+            print(f"Hint: \n Digits in the correct position: {correct_position}\n Correct digits in the wrong position: {correct_number}")
 
 def get_secret_number(player_num):
     while True:
